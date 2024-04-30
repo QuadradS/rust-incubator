@@ -30,7 +30,7 @@ After completing these steps, you should be able to answer (and understand why) 
 
 _Additional_ articles, which may help to understand the above topic better:
 - [Chris Morgan: Rust ownership, the hard way][1] +
-- [Adolfo Ochagavía: You are holding it wrong][12]
+- [Adolfo Ochagavía: You are holding it wrong][12] +
 - [Vikram Fugro: Beyond Pointers: How Rust outshines C++ with its Borrow Checker][15]
 - [Sabrina Jewson: Why the “Null” Lifetime Does Not Exist][16]
 - [HashRust: A guide to closures in Rust][13]
