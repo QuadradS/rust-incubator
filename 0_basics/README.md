@@ -10,8 +10,33 @@ Polish your familiarity by completing [Rust By Example] and [rustlings].
 Read through [Cargo Book] and become familiar with [Cargo] and its workspaces.
 
 After completing these steps, you should be able to answer (and understand why) the following questions:
+
 - What memory model [Rust] has? Is it single-threaded or multiple-threaded? Is it synchronous or asynchronous?
-- What runtime [Rust] has? Does it use a GC (garbage collector)?
+
+    ```
+  Rust has a multi-threaded memory model. It allows 
+  programs to create and manage multiple threads of 
+  execution concurrently, which can run in parallel 
+  on multicore processors. Rust provides powerful abstractions 
+  for safe concurrent programming, including thread 
+  synchronization primitives like mutexes, atomic types, and channels.
+
+  As for whether Rust is synchronous or asynchronous, it supports both synchronous 
+  and asynchronous programming paradigms. In synchronous programming, operations are 
+  executed sequentially, one after the other, blocking the thread until each operation 
+  completes. Asynchronous programming, on the other hand, allows tasks to execute concurrently, 
+  and the thread can continue to perform other work while waiting 
+  for asynchronous operations to complete.
+  
+  Rust provides support for asynchronous programming through its async/await syntax and the 
+  futures and async-std libraries. With async/await, you can write asynchronous code that looks 
+  like synchronous code, making it easier to reason about and write asynchronous programs 
+  without the complexity of manual callback handling or explicit concurrency primitives.
+   However, Rust also fully supports synchronous programming, giving developers 
+  the flexibility to choose the most appropriate approach for their specific use case.
+  ```
+
+- What runtime [Rust] has? Does it use a GC (garbage collector)? +
 - What statically typing means? What is a benefit of using it?
 - What are generics and parametric polymorphism? Which problems do they solve?
 - What are traits? How are they used? How do they compare to interfaces? What are an auto trait and a blanket impl? What is a marker trait?
@@ -31,7 +56,7 @@ After completing these steps, you should be able to answer (and understand why) 
 _Additional_ articles, which may help to understand the above topic better:
 - [Chris Morgan: Rust ownership, the hard way][1] +
 - [Adolfo Ochagavía: You are holding it wrong][12] +
-- [Vikram Fugro: Beyond Pointers: How Rust outshines C++ with its Borrow Checker][15]
+- [Vikram Fugro: Beyond Pointers: How Rust outshines C++ with its Borrow Checker][15] +
 - [Sabrina Jewson: Why the “Null” Lifetime Does Not Exist][16]
 - [HashRust: A guide to closures in Rust][13]
 - [Ludwig Stecher: Rusts Module System Explained][2]
@@ -46,9 +71,6 @@ _Additional_ articles, which may help to understand the above topic better:
 - [Georgios Antonopoulos: Rust vs Common C++ Bugs][10]
 - [Yurii Shymon: True Observer Pattern with Unsubscribe mechanism using Rust][11]
 - [Clayton Ramsey: I built a garbage collector for a language that doesn't need one][17]
-
-
-
 
 [Cargo]: https://github.com/rust-lang/cargo
 [Cargo Book]: https://doc.rust-lang.org/cargo
